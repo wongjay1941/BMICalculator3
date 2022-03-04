@@ -22,7 +22,7 @@ class InfoActivity : AppCompatActivity() {
         val bmi = intent.getFloatExtra(MainActivity.EXTRA_BMI, 0f)
 
         if(bmi > 0){
-            textViewCurrentBMI.text = String.format("%s : %.2f", getString(R.string.current_bmi), bmi)
+            binding.textViewCurrentBMI.text = String.format("%s : %.2f", getString(R.string.current_bmi), bmi)
         }
 
         //Using binding will save the steps to declare variables, using methods, etc
